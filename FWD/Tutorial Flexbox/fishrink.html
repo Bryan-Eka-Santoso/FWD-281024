@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Flexbox</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding: 0;
+        }
+        div.container{
+            border:2px solid black;
+            margin:0 5px;
+            display:flex;
+            /* flex-wrap: nowrap (default) | wrap | wrap-reverse; */
+        }
+        
+        h1{
+            color: rgb(39, 40, 42);
+        }
+
+        div.kotak{
+            width:200px;
+            height:200px;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bold;
+            /* border: 1px solid brown; */
+            color:rgb(39, 40, 42);
+        }
+
+        div.kotak1:nth-of-type(1){
+            background-color: lightsalmon;
+            flex-shrink:3;
+        }
+        div.kotak2:nth-of-type(2){
+            background-color: lightskyblue;
+            flex-shrink:2;
+            
+        }
+        div.kotak3:nth-of-type(3){
+            background-color: lightgreen;
+           
+        }
+        div.kotak4:nth-of-type(4){
+            background-color: lightcoral;
+            
+        }
+        div.kotak5:nth-of-type(5){
+            background-color: lightcyan;
+            
+        }
+        div.kotak6:nth-of-type(6){
+            background-color: lightpink;
+           
+        }
+        div.kotak7:nth-of-type(7){
+            background-color: lightgray;
+            
+        }
+        div.kotak8:nth-of-type(8){
+            background-color: lightgoldenrodyellow;
+            
+        }
+        div.kotak9:nth-of-type(9){
+            background-color: lightskyblue;
+            
+        }
+        div.kotak10:nth-of-type(10){
+            background-color: lightyellow;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Container</h1>
+    <h3>Flex Items Shrink</h3>
+    <br>
+    <h4>Shrink</h4>
+    <br>
+    <h4> Secara default nilai flex-shrink adalah 1. Lakukan pengurangan/penyusutan item pada kotak 1 bernilai 3 dan kotak 2 bernilai 2. Flex shrink ini dilakukan jika ukuran container tidak mencukupi</h4>
+    <div class="container bar1">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak5">
+            Kotak 5
+        </div>
+        <div class="kotak kotak6">
+            Kotak 6
+        </div>
+        <div class="kotak kotak7">
+            Kotak 7
+        </div>
+        <div class="kotak kotak8">
+            Kotak 8
+        </div>
+        <div class="kotak kotak9">
+            Kotak 9
+        </div>
+        <div class="kotak kotak10">
+            Kotak 10
+        </div>
+    </div>
+    <br>
+    <p> Tambahan ada flex-basis: auto; -> tujuannya untuk mengatur ukuran lebar dari item flex supaya bernilai sama dengan nilai width.
+        <pre>Cara cepat menulis flex: none | [<'flex-grow'><'flex-shrink'>?||<'flex-basis'>]</pre>
+    </p>
+</body>
+</html>

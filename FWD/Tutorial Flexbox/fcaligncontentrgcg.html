@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Flexbox</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding: 0;
+            font-size: 12;
+        }
+        div.container{
+            border:2px solid black;
+            margin:0 5px;
+            height:100vh;
+            display:flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            column-gap: 5px;   
+            row-gap: 5px;
+        }
+        div.bar1{
+            align-content: flex-start;
+        }
+        div.bar2{
+            align-content: flex-end;
+        }
+        div.bar3{
+            align-content: center;
+        }
+        div.bar4{
+            align-content: stretch;
+        }
+        div.bar5{
+            align-content: space-between;
+        }
+        div.bar6{
+            align-content: space-around;
+        }
+        div.bar7{
+            align-content: space-evenly;
+        }
+        h1{
+            color: rgb(39, 40, 42);
+        }
+        div.kotak{
+            width:100px;
+            height:100px;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em;
+            color:rgb(39, 40, 42);
+        }
+        div.kotak1{
+            background-color: lightsalmon;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+        }
+        div.kotak2{
+            background-color: lightskyblue;
+            width: 230px;
+            height: 230px;
+            line-height: 230px;
+        }
+        div.kotak3{
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }
+        div.kotak4{
+            background-color: lightcoral;
+            width: 80px;
+            height:80px;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Container</h1>
+    <h3>Flex Align Content</h3>
+    <br>
+    <h4>align-content: flex-start</h4>
+    <div class="container bar1">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>align-content:flex-end</h4>
+    <div class="container bar2">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div><div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>align-content:center</h4>
+    <div class="container bar3">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>align-content:stretch</h4>
+    <div class="container bar4">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>align-content:space between</h4>
+    <div class="container bar5">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>align-content:space-around</h4>
+    <div class="container bar6">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>align-content:space-evently</h4>
+    <div class="container bar7">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    padding: 0 5rem;
+}
+
+nav div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div.container .logo img{
+    width: 200px;
+}
+
+nav div.container .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+
+nav div.container .navbar ul li {
+    list-style-type: none;
+}
+
+nav div.container .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header div.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(img/hero.jpeg);
+    background-size: 100% 100%;
+    height: calc(100vh - 80px);
+}
+
+/* header img{
+    width: 100%;
+} */
+
+div.container div.content-header {
+    max-width: 25rem;
+    padding-right: 5rem;
+    color: white;
+}
+
+div.container div.content-header h1 {
+    font-size: 4rem;
+}
+
+button {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid red;
+}
+
+footer {
+    background-color:black;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+section h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+section .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section .container .content1 img {
+    border-radius: 100%;
+}
+
+section .container .content1{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+section .container .content2 img {
+    border-radius: 50%;
+}
+
+section .container .content2{
+    margin: 0 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+section .container .content3 img {
+    border-radius: 50%;
+}
+
+section .container .content3{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+} 

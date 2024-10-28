@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Flexbox</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding: 0;
+        }
+        div.container{
+            border:2px solid black;
+            margin:0 5px;
+            display:flex;
+            /* flex-wrap: nowrap (default) | wrap | wrap-reverse; */
+        }
+        div.bar1{
+            flex-wrap: wrap;
+        }
+        
+        h1{
+            color: rgb(39, 40, 42);
+        }
+
+        div.kotak{
+            width:100px;
+            height:100px;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bold;
+            /* border: 1px solid brown; */
+            color:rgb(39, 40, 42);
+        }
+
+        div.kotak1:nth-of-type(1){
+            background-color: lightsalmon;
+            order:7;
+        }
+        div.kotak2:nth-of-type(2){
+            background-color: lightskyblue;
+            order:10;
+        }
+        div.kotak3:nth-of-type(3){
+            background-color: lightgreen;
+            order:1;
+        }
+        div.kotak4:nth-of-type(4){
+            background-color: lightcoral;
+            order:4;
+        }
+        div.kotak5:nth-of-type(5){
+            background-color: lightcyan;
+            order:2;
+        }
+        div.kotak6:nth-of-type(6){
+            background-color: lightpink;
+            order: 3;
+        }
+        div.kotak7:nth-of-type(7){
+            background-color: lightgray;
+            order: 5;
+        }
+        div.kotak8:nth-of-type(8){
+            background-color: lightgoldenrodyellow;
+            order: 8;
+        }
+        div.kotak9:nth-of-type(9){
+            background-color: lightskyblue;
+            order: 6;
+        }
+        div.kotak10:nth-of-type(10){
+            background-color: lightyellow;
+            order:9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Container</h1>
+    <h3>Flex Items Order</h3>
+    <br>
+    <h4>order</h4>
+    <br>
+    <h4> Secara defualt nilai order adalah 1. Lakukan penukaran posisi dalam items</h4>
+    <div class="container bar1">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+        <div class="kotak kotak5">
+            Kotak 5
+        </div>
+        <div class="kotak kotak6">
+            Kotak 6
+        </div>
+        <div class="kotak kotak7">
+            Kotak 7
+        </div>
+        <div class="kotak kotak8">
+            Kotak 8
+        </div>
+        <div class="kotak kotak9">
+            Kotak 9
+        </div>
+        <div class="kotak kotak10">
+            Kotak 10
+        </div>
+    </div>
+   
+</body>
+</html>

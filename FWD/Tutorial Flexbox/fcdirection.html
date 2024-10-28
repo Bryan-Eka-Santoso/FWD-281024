@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Flexbox</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding: 0;
+            font-size: 12;
+        }
+        div.container{
+            border:2px solid black;
+            margin:0 5px;
+            display:flex;
+            /* flex-direction: row | row-reverse | column | column-reverse */
+            flex-direction: column;
+        }
+
+        div.bar1{
+            border:2px solid black;
+            margin:0 5px;
+            display:flex;
+            /* flex-direction: row | row-reverse | column | column-reverse */
+            flex-direction: column-reverse;
+        }
+
+        div.bar2{
+            border:2px solid black;
+            margin:0 5px;
+            display:flex;
+            /* flex-direction: row | row-reverse | column | column-reverse */
+            flex-direction: row;
+        }
+
+        div.bar3{
+            border:2px solid black;
+            margin:0 5px;
+            display:flex;
+            /* flex-direction: row | row-reverse | column | column-reverse */
+            flex-direction: row-reverse;
+        }
+
+        h1{
+            color: rgb(39, 40, 42);
+        }
+        div.kotak{
+            width:100px;
+            height:100px;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            color:rgb(39, 40, 42);
+        }
+        div.kotak1{
+            background-color: lightsalmon;
+        }
+        div.kotak2{
+            background-color: lightskyblue;
+        }
+        div.kotak3{
+            background-color: lightgreen;
+        }
+        div.kotak4{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Container</h1>
+    <h3>Flex Direction</h3>
+    <br>
+    <h4>flex-direction: column</h4>
+    <div class="container">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>flex-direction: column-reverse</h4>
+    <div class="container bar1">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>flex-direction: row</h4>
+    <div class="container bar2">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+    <br>
+    <h4>flex-direction: row-reverse</h4>
+    <div class="container bar3">
+        <div class="kotak kotak1">
+            Kotak 1
+        </div>
+        <div class="kotak kotak2">
+            Kotak 2
+        </div>
+        <div class="kotak kotak3">
+            Kotak 3
+        </div>
+        <div class="kotak kotak4">
+            Kotak 4
+        </div>
+    </div>
+
+</body>
+</html>
